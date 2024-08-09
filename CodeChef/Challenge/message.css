@@ -18,10 +18,6 @@ body {
     overflow: hidden;
 }
 
-/* .left, .right {
-    flex: 1;
-    padding: 20px;
-} */
 
 .left {
     background-color: #FF0000;
@@ -51,22 +47,37 @@ body {
 }
 
 .righ {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: 10px;
+    flex-grow:1;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse; 
+    height: 400px; 
+    overflow-y: auto; 
+    padding: 10px;
+    border: #ccc;
+    background-color: #f0f0f0;
 }
 
 .message {
     align-self: flex-end;
-    background-color: #AFF9FE;
-    color: white;
+    margin-bottom: 15px;
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    max-width: 60%;
-    word-wrap: break-word;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(43, 187, 187);
+    max-width: 300px;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: black;
+    margin-top: 5px;
+}
+
+.write{
+    align-items: center;
+    background-color: rgb(196, 182, 182);
+    font-weight: bolder;
+    font-style:oblique;
 }
 
 .text {
@@ -86,7 +97,7 @@ body {
 button {
     padding: 10px 20px;
     margin-left: 10px;
-    background-color: rgb(5, 5, 252);
+    background-color: white;
     color: white;
     border: none;
     border-radius: 5px;

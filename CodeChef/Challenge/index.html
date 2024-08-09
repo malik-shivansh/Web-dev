@@ -23,7 +23,7 @@
             <div class="righ" id="righ"></div>
             <div class="text">
                 <input type="text" id="messageInput" placeholder="Type your message..." class="mess">
-                <button onclick="sendMessage()">Send</button>
+                <button onclick="sendMessage()"><img src="send.svg" alt=""></button>
             </div>
         </div>
     </div>
@@ -37,6 +37,13 @@
                 messageDiv.classList.add("message");
                 messageDiv.textContent=message;
                 righ.appendChild(messageDiv);
+                const timestamp = document.createElement("div");
+                const now = new Date();
+                const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                timestamp.textContent = timeString;
+                timestamp.classList.add("timestamp");
+                messageDiv.appendChild(timestamp);
+                righ.insertBefore(messageDiv, righ.firstChild);
                 righ.scrollTop=righ.scrollHeight;
                 input.value="";
             }
