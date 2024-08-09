@@ -1,0 +1,16 @@
+.my{
+    margin-left:40px;
+    border-radius: 50%;
+}
+.name{
+    margin-left:60px;
+}
+.my_name{
+    margin-bottom:5px;
+    font-size: xxx-larger;
+    color: greenyellow;
+}
+.gender{
+    margin-top:5px;
+    margin-left:30px
+}

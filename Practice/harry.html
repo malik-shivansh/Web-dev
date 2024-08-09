@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Strings and Strings Methods</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In soluta, eos a magni debitis eveniet neque
+            architecto. Nam, dolorum nemo excepturi minima consectetur itaque enim repellat fugit, dolore assumenda
+            impedit odit, pariatur quaerat necessitatibus.</p> 
+    </div>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        var string = "this";
+        var name = "Harry";
+        var message = "is a good boy";
+        console.log(string);
+        console.log(name + message);
+        var channel = "codewithharry";
+        var temp = `${name} is a nice person and he has a channel called ${channel}`;
+        console.log(temp);
+        //This will print harry is a nice person and he has a channel called codewithharry.
+        //We can also use single codes and double codes in betwwen a sentence or word if we are using back ticks.
+        // for finding length of string we use name of var.length means(ex: name.length).
+        console.log(name.length);
+        //Sequence escaping characters.
+        console.log("Hello World\n Harry");
+        //Another way to make a string using constructor.
+        var y = new String("this");
+        console.log(y);
+
+        //Javascript String Function
+        var str = "This is a string";
+        console.log(str);
+        //first occurence of a substring.
+        var position = str.indexOf("is");
+        console.log(position);
+        //last occurence of a substring.
+        var positio = str.lastIndexOf("is");
+        console.log(positio);
+        //substring from a string.
+        var substr1 = str.slice(1, 6);
+        console.log(substr1);
+        var nam = "Shivansh Malik";
+        substri = nam.slice(1, 6);
+        console.log(substri);
+        //we can also perform this activity by writing substring in place of slice. But the difference between these two is that slice can have negative index but substring cannot have negative index.
+
+        // If we have to replace a substrin in a string/
+        var replaced = str.replace("string", "Harry");
+        console.log(str);
+        console.log(replaced);
+
+        //Converting into uppercase and lowercase.
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //to concatinate we use '+' sign but we can also write concat to do this.
+        var newstring = str.concat("New string");
+        console.log(newstring);
+
+        //there is trim function in string which remove the whitespaces from front and back of the string.
+        var strwithwhitespaces = "     this constains        whitespaces    ";
+        console.log(strwithwhitespaces);
+        console.log(strwithwhitespaces.trim());
+
+        //How to extract characters from string.
+        var char2 = str.charAt(2);
+        console.log(char2);
+
+        //To get a character code we use the function charcodeAt.
+        var char3 = str.charCodeAt(2);
+        console.log(char3);
+
+        //we can also do slicing like this.
+        console.log(str[2]);
+
+
+        //If else condition and switch case in javascript.
+        var string1 = "This is a string";
+        var string1 = "This is a string2";
+        console.log(string1)
+        let a = "u";
+        console.log(a);
+        //Therefore we use let instead of var because if we use a name two times then it will show error but if we us var and write the same name at two different places then it will replace the first one which is not ok.
+
+        //constant function.
+        const b ="This cannot be changed";
+        console.log(b);
+
+        //conditional.
+        let age=34;
+        if(age>18){
+            console.log("You can drink water");
+        }
+        else{
+            console.log("You can drink Cold Drink")
+        }
+        
+        //For checking multiple conditions.
+        let age1=24
+        if(age1<18){
+            console.log("You can drink Cold Drink");
+        }
+        else if(age1>18){
+            console.log("You can Drink");
+        }
+        else{
+            console.log("you can drink Water");
+        }
+
+        //Switch case statements.
+        const cups=42;
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4");
+                break;
+            case 41:
+                console.log("The value of cups is 41");
+                break;
+            case 42:
+                console.log("The value of cups is 42");
+                break;
+            case 43:
+                console.log("The value of cups is 43");
+                break;
+        default:
+        console.log("The value of cups is none of 4,41,42,43");
+            break;
+        }
+
+        //Arrays and Objects.
+        let myVar=34;
+        let myvar2="string";
+        let myvar3=true;
+        let myvar4=null;
+        let myvar5=undefined;
+
+        //Objects
+        let employee={
+            name:"harry",
+            salary:10,
+            channel:"codewithharry",
+            channel2:"programmingwithharry",
+        }
+        console.log(employee);
+
+        //Arrays
+        let names=[1,4,2,"Harry",undefined];
+        console.log(names);
+        console.log(names.length);
+        //we can also make arrays by.
+        let array=new Array(1,2,4,"shivansh");
+        console.log(array);
+
+        //To sort an array.
+        names=names.sort();
+        console.log(names)
+
+        //To add and remove an element from array.
+        names.push("This is pushed");
+        console.log(names);
+
+        //if we have to make no. of elements in a array then.
+        let make=new Array(23);
+        make.push("This is pushed");
+        console.log(make);
+
+        //Functions
+        function greet(name){
+            console.log(name + " is a good boy");
+        }
+        let name4="Shivansh";
+        let name1="Harry";
+        let name2="Shubham";
+        let name3="Sagar";
+        greet(name4);
+        greet(name1);
+        greet(name2);
+        greet(name3);
+        //We can also paas two arguments.
+
+        function sum(a,b,c){
+            let d=a+b+c;
+            return d;
+        }
+        let rel=sum(1,2,3);
+        console.log(rel);
+
+        //Alret, Prompt, Confirm.
+        //Alert(Does not return anything),
+        alert("This is a message");
+        //Alert is used to give message to a user when they open the website.
+
+        //Prompt.
+        let name6=prompt("What is your name?","Guest");
+        console.log(name6);
+
+        //Confirm.
+        //To double check the move made by user by asking confirm or cancel.
+        let deletePost=confirm("Do you really want to delete this post?");
+        console.log(deletePost);
+
+        //Loops.
+        let friends=["rohan","deepti","pooja","skillf"];
+        for (let i=0; i<friends.length; i++) {
+            let element=friends[i];
+            console.log(element);
+        }
+
+        //One more way to iterate the array is.
+        for (element of friends){
+            console.log("Hello friend,"+ element+" to modern javascript again");
+        }
+
+        let employe={
+            name:"Harry",
+            salary:2,
+            channel:"codewithharry"
+        }
+
+        //Use this loop to iterate over objects in javascript.
+        for(key in employe){
+            console.log(`the ${key} of employe is ${employe[key]}`);
+        }
+
+        //Navugating the DOM(Document object module).
+        let containers=document.getElementById("main");
+        console.log(containers);
+
+
+        //cleartimeout and settimeout
+        //Settimeout ---> allows us to run the function once after the interval of time.
+        //Settimeout ---> allows us to run the function repeatedly after the interval of time.
+        
+        function greet(){
+            console.log("Hello Good Morining!");
+        }
+        setTimeout(greet,5000);
+        //This 5000 is time in milliseconds after which this function will appear on the screen means after 5s.
+        //We can also put multiple arguments.
+        function greets(name,bytext){
+            console.log("Hello Godd Morning " + name + bytext);
+        }
+        setTimeout(greets,5000,"Shivansh","take care");
+        //In settimeout we don't have to call the function we just have to write its name.
+
+        //If we have to remove this timeout then we use cleartimeout function which works like this:
+        function sum(a,b){
+            let d=a+b;
+            console.log("Sum of two numbers is: " + d);
+        }
+        timeout=setTimeout(sum,6000,12,13);
+        clearTimeout(timeout);
+
+        //setinterval is also used in same way but the difference is that it repeatedly print the same thing.
+
+        //To display time in our website we can use this.
+        /*function displaytime(){
+            time= new Date()
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+            //This time inside the dom is of span id which is written in html code above.
+        }
+        setInterval(displaytime,1000);*/
+    
+
+        //Dates and times
+        let now = new Date();
+        console.log(now);
+
+
+        let newDate = new Date("2024-02-29");
+        console.log(newDate);
+
+        let year = newDate.getFullYear();
+        console.log("The year is: ",year);
+
+        let date = newDate.getDate();
+        console.log("The date is: ",date);
+
+        let month = newDate.getMonth();
+        console.log("The month is: ",month);
+
+        let day = newDate.getDay();
+        console.log("The day is: ",day);
+
+        newDate.setDate(15);
+        console.log(newDate);
+
+
+
+        //Arrow function.
+        greetss = ()=>{
+            console.log("Good morning");
+        }
+        greetss();
+
+        //This can be used in this way also.
+        setTimeout(()=>{
+            console.log("We are inside settimeout")
+        },3000);
+
+        //shorcut of arrow function is also there.
+        morn = ()=> console.log("Good morning vats!");
+        
+
+        //Math object
+        let m=Math;
+        console.log(m);
+        //Printing the constants from Math Object.
+        console.log("The value of e is: ",Math.E);
+        console.log("The value of square root of 2 is: ",Math.SQRT1_2);
+        console.log("The value of ln2 is: ",Math.LN2);
+        //Printing the Functions from Math Object.
+        let a1 = 34.65676876;
+        let b1 = 79;
+        console.log("The value a and b is: ",a1, b1);
+        console.log("The rounded value of a and b is: ",Math.round(a1),Math.round(b1));
+        console.log("3 raised to the power 2 is: ",Math.pow(3,2));
+        console.log("2 raised to the power 3 is: ",Math.pow(2,3));
+        console.log("The square root of the 36 is: ",Math.sqrt(36));
+        //Ceil and floor values. ceil value gives a value just higher than that number and floor value gives a value just lower than that number.
+        console.log("The ceil value of 7.34353454 is: ",Math.ceil(7.34353454));
+        console.log("The floor value of 7.34353454 is: ",Math.floor(7.34353454));
+
+        //Absolute function.
+        console.log("The absolute value of 5.66 is: ",Math.abs(5.66));
+        console.log("The basolute value of -5.66 is: ",Math.abs(-5.66));
+
+        //Trigonometric functions.
+        console.log("The value of sin(pi/2) is: ",Math.sin(Math.PI/2));
+        console.log("The value of tan(pi/2) is: ",Math.tan(Math.PI/2));
+        console.log("The value of cos(pi/2) is: ",Math.cos(Math.PI/2));
+
+        //Min and Max functions.
+        console.log("The Minimum and Maximum value from 4,5 and 6 is: ",Math.min(4,5,6),Math.max(4,5,6));
+
+        //Random numbers.
+        let r=Math.random();
+        console.log("The random number is: ",r);
+        //This will give you any random number between 0 and 1. To get random number between a and b we can do like this.
+        //Random number b/w (a,b) is: a+(b-a)*Math.random();
+        console.log("The Random number between 20 and 60 is: ",20+(60-20)*Math.random());
+
+        
+
+        //JSON(javascript object notation)==> Used for interchanging the data.
+        let jsonobj={
+            name:"Shivansh Malik",
+            channel:"Shivanshmalik._",
+            friend:"vipul"
+        } ;
+        console.log(jsonobj);//This will print it as a object if we have to print it as a string to interchange it or do some specific changes we can convert it into an string by stringify it.
+        let myjson=JSON.stringify(jsonobj);
+        console.log(myjson);
+
+        //If we have to change any thing in this then we can use string functions like==>
+        myjson=myjson.replace("Shivansh Malik","Mayank");
+        console.log(myjson);
+
+        //If we have to convert this string again into an object then we do this==>
+        let newjson=JSON.parse(myjson);
+        console.log(newjson);
+        //The converted string should be valid json because this is its condition otherwise it will throw parse error.
+        
+
+        //This JSON is also used in c++,python, frontend and backend in javascript and in many more languages.
+
+        //Summary for json
+        //To convert an object into an string we use stringify and to convert an string into an object we use parse.
+    </script>
+</body>
+</html>

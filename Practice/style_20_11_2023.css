@@ -1,0 +1,24 @@
+*{
+    padding:0;
+    margin:0;
+}
+.bg-1{
+    background-color:rgb(98, 98, 236);
+    height:500px;
+    width:1000px;
+    display:flex;
+    /* these four will work in clockwise */
+    /* display:flex; will work in place of padding if we are using height and is more convenient. */
+    align-items:center;
+    /* these two properties works with display flex only */
+    justify-content:center;
+    margin-left: 18%;
+    margin-top:5%;
+}
+.bg-1 h1{
+    text-align:center;
+    font-size:100px;
+    font-style:italic;
+    color:Black;
+
+}

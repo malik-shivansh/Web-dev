@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web_development</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="practice1.css">
+</head>
+
+<body>
+    <!-- For validation or Non-Validation in form we will use javascript for that. -->
+    <form onsubmit="return validation()">
+        <!-- we use onsubmit function so that after submitting the form validation is required, so onsubmit function is necessay.Validation is a function name that we will use in javascript page -->
+        <div class="mb-3">
+            <label for="example" class="form-label">Name</label><br>
+            <input type="text" placeholder="Name" id="example" class="form-control">
+            <!-- If any error happen then we will use this tag -->
+            <span id="error-name" style="font-size: 10px; color: red;"></span>
+            <!-- This span tag will give error if it is not valid.We also have to give unique I'D -->
+        </div>
+        <!-- id should be different for every span -->
+        <div class="mb-3">
+            <label for="input" class="form-label">Email</label><br>
+            <input type="email" placeholder="Email Id" id="input" class="form-control">
+            <span id="error-" style="font-size: 10px; color: red;"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="1" class="form-label">Contact No.</label><br>
+            <input type="number" placeholder="Contact No." id="1" class="form-control">
+            <span id="error-n" style="font-size: 10px; color: red;"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="2" class="form-label">Password</label><br>
+            <input type="password" id="2" class="form-control">
+            <span id="error-na" style="font-size: 10px; color: red;"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="2" class="form-label">confirm Password</label><br>
+            <input type="password" id="3" class="form-control">
+            <span id="error-nam" style="font-size: 10px; color: red;"></span>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="bt btn-primary" style="font-size: 20px;">Register</button>
+        </div>
+    </form>
+    <div class="box">
+        <h1>Shivansh Malik</h1>
+    </div>
+    <div class="para">
+        <p>Shivansh Malik is a very intelligent guy and currently completing his graduation form vit chennai which is
+            renowned and prestigeous college of india in recent times. He secure 18701 rank in jee advance in 2023 which
+            is a fine rank according to his knowledge.</p>
+    </div>
+
+    <!-- 25/12/2023 -->
+    <!-- form to collect data in Google sheet-->
+    <div class="container pb-5 pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Feedback please...</h1>
+                <form name="form-googlesheet" method="post">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" name="Email ID" class="form-control" id="exampleInputEmail1">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInput10" class="form-label">Name</label>
+                        <input type="text" name="Name" class="form-control" id="exampleInput10">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInput11" class="form-label">Comment</label>
+                        <textarea name="Comment" id="exampleinput11" cols="10" rows="3" class="form-control"
+                            placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- What ever the name we have written in form part the same name and in same format we have to write in google sheet.Example in email input we have written name as Email ID then the same name with same way we have to write. -->
+
+    <!-- For connecting javascript page to this html page.We use this script tag. -->
+    <script src="main.js"></script>
+</body>
+
+</html>

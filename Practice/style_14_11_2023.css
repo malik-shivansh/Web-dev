@@ -1,0 +1,38 @@
+/* class */
+*{
+    padding: 0;
+    margin: 0;
+}
+table{
+    border-collapse: collapse;
+}
+table tr th, table tr td{
+    border: 1px solid rgb(0, 128, 43);
+}
+.head-1{
+    color: blue;
+    font-size: 60px;
+
+}
+.head-2{
+    color: red;
+    font-size: 40px;
+
+}
+.head-3{
+    font-weight: 30;
+    font-size: 45px;
+    color: yellow;
+    font-style: italic;
+    text-wrap:stable;
+
+}
+.shivansh{
+    color: green;
+    font-style: italic;
+    text-align:center;
+    text-decoration:underline;
+    text-transform:uppercase;
+    text-wrap:stable;
+
+}

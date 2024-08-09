@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(230, 223, 223);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* .left, .right {
+    flex: 1;
+    padding: 20px;
+} */
+
+.left {
+    background-color: #FF0000;
+    width: 25vw;
+    padding: 20px;
+}
+
+.icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    justify-content: space-between; 
+    background-color: #F4F4F4;
+    ;
+    padding: 20px;
+}
+
+.number {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(197, 194, 194);
+    margin-bottom: 10px;
+}
+
+.righ {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    align-self: flex-end;
+    background-color: #AFF9FE;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.text {
+    display: flex;
+    border-top: 1px solid rgb(187, 186, 186);
+    padding-top: 10px;
+}
+  
+.mess {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid rgb(185, 182, 182);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: rgb(5, 5, 252);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: rgb(2, 2, 190);
+}

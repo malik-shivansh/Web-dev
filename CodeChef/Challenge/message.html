@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="message.css">
+    <title>Message</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="type">Now you can chat for free with anywhere and anyone here!</div>
+            <div class="icon"><img src="message.svg" alt=""></div>
+            
+        </div>
+        <div class="right" id="right">
+            <div class="number">
+                <div class="write">Your Registration Number: 23BCE1377</div>
+            </div>
+            <div class="righ" id="righ"></div>
+            <div class="text">
+                <input type="text" id="messageInput" placeholder="Type your message..." class="mess">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function sendMessage(){
+            const input=document.getElementById("messageInput");
+            const righ=document.getElementById("righ");
+            const message=input.value.trim();
+            if(message){
+                const messageDiv=document.createElement("div");
+                messageDiv.classList.add("message");
+                messageDiv.textContent=message;
+                righ.appendChild(messageDiv);
+                righ.scrollTop=righ.scrollHeight;
+                input.value="";
+            }
+            window.onload = function() {
+                const messageContainer = document.getElementById("righ");
+                messageContainer.scrollTop = messageContainer.scrollHeight;
+            };
+        }
+    </script>
+</body>
+</html>

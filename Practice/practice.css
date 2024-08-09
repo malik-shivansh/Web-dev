@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+table tr th {
+    color: rgb(206, 73, 73);
+    border: 2px dotted;
+}
+
+table tr td {
+    color: rgb(218, 137, 218);
+    border: 3px solid;
+}
+
+.shivansh {
+    color: rgba(0, 255, 255, 0.92);
+    font-size: 70px
+}
+
+.bg-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background-image: url(images/cmpunk.png) rgb(52, 198, 198);
+    background-size: cover;
+
+}
+
+.shivansh {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Animation */
+.box-css {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    padding: 20px;
+    margin: 100px;
+    transition: .3s;
+}
+.box-css:hover {
+    transform: scalex(1.5);
+    /* 1 means original size */
+    /* If i will put x in front of scale like this: scalex, then the size will increase in x axis only and same for y and z axis. */
+    transition: .5s;
+    /* .5s used for smoothness of effect when we put cursor on text. */
+    transform: translate(100px);
+    /* This will help to move the object.For moving along the axis we have to just write the axis name like we have done in scale */
+    transform: translate3d(100px, -50px, 20px);
+    /* this will move the object in 3d along diagonal. */
+    transform: rotate(360deg);
+    /* This will help to rotate the object.*/
+    transform: skew(30deg);
+    /* It will bend like a paralleloram. */
+}
+
+
+
+/* Mobile Responsive */
+/* We will be using Media query for this. */
+@media screen and (max-width: 600px) {
+    /* write name of class and block display flex */
+    /* for the para written under the images we have to define width:auto so that it will take automatically the complete screen size of the mobile screen. */
+
+}
+
+/* For Tablet Responsive */
+@media (min-width:601px) and (max-width:820px) {
+    .bg-1 {
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media (min-width:821px) and (max-width:1024px) {
+    /* Do not block the display flex in tablet because it will not look nice as tablet have enough screen to show them in a single row. */
+}
+
+
+/* 22/12/2023 */
+/* animation */
+.box-css{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 100px;
+    transition: .5s;
+
+    animation: bounce 2s infinite linear;
+    /* first we need to write that which animation we are going to use and then the duration of animation.If we write infinite linear then the animation will continue or if we write forwards then animation will happen once and then it will stop. */
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+    }
+}
+
+.box-css1{
+    width:100px;
+    height:100px;
+    background-color:bisque;
+    padding:20px;
+    margin:50px;
+    animation:pulsing 3s infinite linear;
+}
+
+@keyframes pulsing{
+    20%{
+        box-shadow: 0px 0px 5px 10px rgb(111, 178, 111);
+    }
+    40%{
+        box-shadow:0px 0px 10px 15px rgb(20, 66, 20);
+    }
+    60%{
+        box-shadow:0px 0px 15px 20px rgb(13, 237, 13);
+    }
+    80%{
+        box-shadow:0px 0px 20px 25px rgb(16, 180, 230);
+    }
+    100%{
+        box-shadow:0px 0px 25px 30px rgb(9, 31, 41);
+    }
+}
+
+.box-css2{
+    width:150px;
+    height:100px;
+    border-radius: 100px;
+    background-color: rgb(118, 118, 209);
+    box-shadow:0px 3px 10px 0px rgb(167, 157, 157);
+    padding:20px;
+    margin:50px;
+    animation:bouncing 4s infinite linear;
+}
+@keyframes bouncing{
+    10%{
+        transform: translate3d(100px, -300px, 20px);
+    }
+    20%{
+        transform:translate3d(200px, 0px, 20px);
+    }
+    30%{
+        transform: translate3d(300px, -250px, 20px);
+    }
+    40%{
+        transform: translate3d(400px, 0px, 20px);
+    }
+    50%{
+        transform: translate3d(500px, -200px, 20px);
+    }
+    60%{
+        transform: translate3d(600px, 0px, 20px);
+    }
+    70%{
+        transform: translate3d(700px, -150px, 20px);
+    }
+    80%{
+        transform: translate3d(800px, 0px, 20px);
+    }
+    90%{
+        transform:translate3d(900px, -100px, 20px);
+    }
+    100%{
+        transform: translate3d(1000px, 0px, 20px);
+    }
+}
+

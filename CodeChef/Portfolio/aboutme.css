@@ -1,0 +1,127 @@
+.subss{
+    display: flex;
+    background-color: whitesmoke;
+}
+.sub{
+    border: 1px solid;
+    width: 300px;
+    height: 700px;
+    margin-left: 100px;
+    background-color: rgb(243, 240, 240);
+    
+}
+.img{
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+.name{
+    margin-left: 65px;
+}
+.subname{
+    margin-left: 60px;
+    color: rgb(0, 174, 255);
+    margin-top: 10px;
+}
+.home{
+    margin-left: 100px;
+}
+.hom{
+    color: rgb(92, 173, 199);
+    margin-left: 100px;
+}
+.subs{
+    border: 1px solid;
+    width: 1000px;
+    margin-left: 10px;
+    background-color: white;
+}
+.about{
+    color: rgb(154, 151, 151);
+    letter-spacing: 2px;
+    margin-left: 40px;
+}
+.who{
+    letter-spacing: 3px;
+    margin-left: 40px;
+}
+.intro{
+    margin-left: 40px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: rgb(111, 110, 110);
+}
+.subsitute{
+    display: flex;
+}
+.subsitut{
+    border: 1px solid;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 200px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: aqua;
+}
+.centre{
+    margin-left: 37px;
+    margin-top: 60px;
+    
+}
+.subsitu{
+    border: 1px solid;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 200px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: red;
+}
+.centr{
+    margin-left: 47px;
+    margin-top: 60px;
+    
+}
+.subsit{
+    border: 1px solid;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 200px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: yellowgreen;
+}
+.cent{
+    margin-left: 60px;
+    margin-top: 60px;
+    
+}
+.subsi{
+    border: 1px solid;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 200px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: purple;
+}
+.cen{
+    margin-left: 50px;
+    margin-top: 60px;
+    
+}
+.last{
+    border: 1px solid;
+    width: 900px;
+    margin-left: 40px;
+    height: 140px;
+    background-color: rgb(255, 166, 0);
+}
+.las{
+    margin-left: 30px;
+}
+.la{
+    margin-left: 30px;
+    background-color: rgb(255, 166, 0);
+    font-size: large;
+}
